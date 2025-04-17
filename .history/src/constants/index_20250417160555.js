@@ -23,7 +23,7 @@ export const LINKS = [
 export const HERO_CONTENT = {
     greeting: 'Hey there! 🖐️',
     introduction:
-        'I’m Duc Thanh, a creative frontend developer, crafting immersive and intuitive web experiences.',
+        'I’m Jason Root, a creative frontend developer, crafting immersive and intuitive web experiences.',
     description:
         'I’m currently helping businesses bring their visions to life through interactive digital solutions.',
     resumeLinkText: 'Download Resume',
@@ -144,12 +144,12 @@ export const CONTACT_CONTENT = {
         "I'm excited to collaborate on projects that push boundaries and create meaningful impact. Let's build something innovative and exceptional together.",
     email: 'ducbii0402@gmail.com',
     socialLinks: [
-        // {
-        //     platform: 'Twitter',
-        //     url: 'https://twitter.com/yourprofile',
-        //     ariaLabel: 'Follow me on Twitter',
-        //     icon: 'RiTwitterXFill'
-        // },
+        {
+            platform: 'Twitter',
+            url: 'https://twitter.com/yourprofile',
+            ariaLabel: 'Follow me on Twitter',
+            icon: 'RiTwitterXFill'
+        },
         {
             platform: 'GitHub',
             url: 'https://github.com/Ducbii4202',

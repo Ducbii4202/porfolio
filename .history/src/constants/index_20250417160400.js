@@ -23,7 +23,7 @@ export const LINKS = [
 export const HERO_CONTENT = {
     greeting: 'Hey there! 🖐️',
     introduction:
-        'I’m Duc Thanh, a creative frontend developer, crafting immersive and intuitive web experiences.',
+        'I’m Jason Root, a creative frontend developer, crafting immersive and intuitive web experiences.',
     description:
         'I’m currently helping businesses bring their visions to life through interactive digital solutions.',
     resumeLinkText: 'Download Resume',
@@ -142,26 +142,26 @@ export const CONTACT_CONTENT = {
     headline: "LET'S WORK ON SOMETHING GREAT",
     description:
         "I'm excited to collaborate on projects that push boundaries and create meaningful impact. Let's build something innovative and exceptional together.",
-    email: 'ducbii0402@gmail.com',
+    email: 'jason@example.com',
     socialLinks: [
-        // {
-        //     platform: 'Twitter',
-        //     url: 'https://twitter.com/yourprofile',
-        //     ariaLabel: 'Follow me on Twitter',
-        //     icon: 'RiTwitterXFill'
-        // },
+        {
+            platform: 'Twitter',
+            url: 'https://twitter.com/yourprofile',
+            ariaLabel: 'Follow me on Twitter',
+            icon: 'RiTwitterXFill'
+        },
         {
             platform: 'GitHub',
-            url: 'https://github.com/Ducbii4202',
+            url: 'https://github.com/yourprofile',
             ariaLabel: 'View my GitHub profile',
             icon: 'RiGithubFill'
         },
         {
             platform: 'LinkedIn',
-            url: 'www.linkedin.com/in/thanh-nguyen0402',
+            url: 'https://linkedin.com/in/yourprofile',
             ariaLabel: 'Connect with me on LinkedIn',
             icon: 'RiLinkedinFill'
         }
     ],
-    footerText: `© ${new Date().getFullYear()} Duc Thanh. All rights reserved.`
+    footerText: `© ${new Date().getFullYear()} Jason Root. All rights reserved.`
 };
