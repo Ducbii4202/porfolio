@@ -1,6 +1,5 @@
 import { RiCloseFill, RiMenu3Fill } from '@remixicon/react';
 import React, { useState } from 'react';
-import { LINKS } from '../constants';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);

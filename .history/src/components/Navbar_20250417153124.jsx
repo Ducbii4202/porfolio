@@ -1,6 +1,5 @@
 import { RiCloseFill, RiMenu3Fill } from '@remixicon/react';
 import React, { useState } from 'react';
-import { LINKS } from '../constants';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +17,7 @@ const Navbar = () => {
                     <a href='/'>Nguyen Duc Thanh</a>
                 </div>
                 <div className='hidden md:flex space-x-8'>
-                    {LINKS.map((link, index) => (
+                    {LINK.map((link, index) => (
                         <a
                             href={link.href}
                             key={index}
@@ -29,7 +28,7 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                <div className='md:hidden'>
+                <div className='md:hidden '>
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
                         className='text-white focus:outline-none'
@@ -48,7 +47,7 @@ const Navbar = () => {
                     className='md:hidden p-2 bg-stone-950/30 backdrop-blur-lg
                 rounded-xl flex flex-col space-y-4 max-w-6xl mx-auto'
                 >
-                    {LINKS.map((link, index) => (
+                    {LINK.map((link, index) => (
                         <a
                             href={link.href}
                             key={index}

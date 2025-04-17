@@ -1,6 +1,5 @@
 import { RiCloseFill, RiMenu3Fill } from '@remixicon/react';
 import React, { useState } from 'react';
-import { LINKS } from '../constants';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +28,7 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                <div className='md:hidden'>
+                <div className='md:hidden '>
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
                         className='text-white focus:outline-none'
