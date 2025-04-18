@@ -83,7 +83,7 @@ export const ABOUT_CONTENT = {
 export const EXPERIENCES = [
     {
         yearRange: 'January 2024 — April 2024',
-        company: ' Amazing Tech Company',
+        company: ' Amazing Tech',
         title: ' Frontend Engineer',
         location: 'District Tan Phu',
         description: [
