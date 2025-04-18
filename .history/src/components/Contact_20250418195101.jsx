@@ -101,6 +101,7 @@ const Contact = () => {
                     );
                 })}
             </div>
+
             <motion.p
                 className='text-sm text-stone-400 mt-36'
                 initial='hidden'

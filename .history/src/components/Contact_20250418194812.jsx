@@ -6,6 +6,7 @@ import {
     RiLinkedinBoxFill as RiLinkedFill
 } from '@remixicon/react';
 import { CONTACT_CONTENT } from '../constants';
+import ShinyText from '../pages/ShinyText ';
 
 const textVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -101,6 +102,12 @@ const Contact = () => {
                     );
                 })}
             </div>
+            <ShinyText
+                text='Just some shiny text!'
+                disabled={false}
+                speed={3}
+                className='custom-class'
+            ><ShinyText/>
             <motion.p
                 className='text-sm text-stone-400 mt-36'
                 initial='hidden'

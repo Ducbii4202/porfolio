@@ -1,11 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { clipPath, section } from 'framer-motion/client';
 import { HERO_CONTENT } from '../constants';
 import avatar1 from '../assets/avatar1.png';
 import TiltedCard from '../pages/TiltedCard';
-import Magnet from '../pages/Magnet ';
 
+// Text animation
 const textVariants = {
     hidden: {
         opacity: 0,
@@ -18,10 +17,9 @@ const textVariants = {
     }
 };
 
+// Container with stagger
 const containerVariants = {
-    hidden: {
-        opacity: 1
-    },
+    hidden: { opacity: 1 },
     visible: {
         opacity: 1,
         transition: {
@@ -30,18 +28,21 @@ const containerVariants = {
     }
 };
 
+// Image animation (clip reveal)
 const imageVariants = {
-    hidden: { clipPath: 'inset(0 50% 0 50%)' },
+    hidden: { clipPath: 'inset(0 50% 0 50%)', opacity: 0 },
     visible: {
         clipPath: 'inset(0 0% 0 0%)',
+        opacity: 1,
         transition: { duration: 1.2, ease: 'easeInOut' }
     }
 };
 
 const Hero = () => {
     return (
-        <section>
-            <div className='relative z-10 min-h-screen flex flex-wrap flex-col md:flex-row items-center justify-center text-white '>
+        <section className='min-h-screen text-white' id='hero'>
+            <div className='relative z-10 flex flex-wrap flex-col md:flex-row items-center justify-center'>
+                {/* Left side text */}
                 <motion.div
                     className='w-full md:w-1/2 p-8'
                     initial='hidden'
@@ -50,47 +51,44 @@ const Hero = () => {
                     variants={containerVariants}
                 >
                     <motion.h1
-                        className='text-2xl md:text-3xl lg:text-5xl my-14 cursor-pointer transition-all duration-300 hover:text-orange-500'
+                        className='text-2xl md:text-3xl lg:text-5xl my-14'
                         variants={textVariants}
-                        whileHover={{ scale: 1.05 }}
                     >
                         {HERO_CONTENT.greeting}
                     </motion.h1>
 
                     <motion.p
-                        className='text-xl md:text-2xl lg:text-4xl mb-4 cursor-pointer transition-all duration-300 hover:text-orange-400'
+                        className='text-xl md:text-2xl lg:text-4xl mb-4'
                         variants={textVariants}
-                        whileHover={{ scale: 1.03 }}
                     >
                         {HERO_CONTENT.introduction}
                     </motion.p>
 
                     <motion.p
-                        className='text-xl md:text-2xl lg:text-4xl cursor-pointer transition-all duration-300 hover:text-orange-400'
+                        className='text-xl md:text-2xl lg:text-4xl'
                         variants={textVariants}
-                        whileHover={{ scale: 1.03 }}
                     >
                         {HERO_CONTENT.description}
                     </motion.p>
 
-                    <Magnet padding={50} disabled={false} magnetStrength={50}>
-                        <motion.a
-                            className='bg-stone-50 text-stone-900 p-3 lg:p-4 mt-8 inline-block rounded-2xl font-semibold hover:bg-stone-200 transition-all'
-                            href={HERO_CONTENT.resumeLink}
-                            download
-                            rel='noopener noreferrer'
-                            target='_blank'
-                            variants={textVariants}
-                        >
-                            {HERO_CONTENT.resumeLinkText}
-                        </motion.a>
-                    </Magnet>
+                    <motion.a
+                        className='bg-stone-50 text-stone-900 p-3 lg:p-4 mt-8 inline-block rounded-2xl font-semibold hover:bg-stone-200 transition-all'
+                        href={HERO_CONTENT.resumeLink}
+                        download
+                        rel='noopener noreferrer'
+                        target='_blank'
+                        variants={textVariants}
+                    >
+                        {HERO_CONTENT.resumeLinkText}
+                    </motion.a>
                 </motion.div>
 
+                {/* Right side image card */}
                 <motion.div
                     className='w-full md:w-1/2 p-8'
                     initial='hidden'
-                    animate='visible'
+                    whileInView='visible'
+                    viewport={{ once: true, amount: 0.3 }}
                     variants={imageVariants}
                 >
                     <TiltedCard

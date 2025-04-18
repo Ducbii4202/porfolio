@@ -4,7 +4,6 @@ import { clipPath, section } from 'framer-motion/client';
 import { HERO_CONTENT } from '../constants';
 import avatar1 from '../assets/avatar1.png';
 import TiltedCard from '../pages/TiltedCard';
-import Magnet from '../pages/Magnet ';
 
 const textVariants = {
     hidden: {
@@ -45,46 +44,37 @@ const Hero = () => {
                 <motion.div
                     className='w-full md:w-1/2 p-8'
                     initial='hidden'
-                    whileInView='visible'
-                    viewport={{ once: true, amount: 0.3 }}
+                    animate='visible'
                     variants={containerVariants}
                 >
-                    <motion.h1
-                        className='text-2xl md:text-3xl lg:text-5xl my-14 cursor-pointer transition-all duration-300 hover:text-orange-500'
+                    <TextPressure
+                        className='text-2xl md:text-3xl lg:text-5xl my-14'
                         variants={textVariants}
-                        whileHover={{ scale: 1.05 }}
                     >
                         {HERO_CONTENT.greeting}
-                    </motion.h1>
-
+                    </TextPressure>
                     <motion.p
-                        className='text-xl md:text-2xl lg:text-4xl mb-4 cursor-pointer transition-all duration-300 hover:text-orange-400'
+                        className='text-xl md:text-2xl lg:text-4xl mb-4'
                         variants={textVariants}
-                        whileHover={{ scale: 1.03 }}
                     >
                         {HERO_CONTENT.introduction}
                     </motion.p>
-
                     <motion.p
-                        className='text-xl md:text-2xl lg:text-4xl cursor-pointer transition-all duration-300 hover:text-orange-400'
+                        className='text-xl md:text-2xl lg:text-4xl'
                         variants={textVariants}
-                        whileHover={{ scale: 1.03 }}
                     >
                         {HERO_CONTENT.description}
                     </motion.p>
-
-                    <Magnet padding={50} disabled={false} magnetStrength={50}>
-                        <motion.a
-                            className='bg-stone-50 text-stone-900 p-3 lg:p-4 mt-8 inline-block rounded-2xl font-semibold hover:bg-stone-200 transition-all'
-                            href={HERO_CONTENT.resumeLink}
-                            download
-                            rel='noopener noreferrer'
-                            target='_blank'
-                            variants={textVariants}
-                        >
-                            {HERO_CONTENT.resumeLinkText}
-                        </motion.a>
-                    </Magnet>
+                    <motion.a
+                        className='bg-stone-50 text-stone-900 p-3 lg:p-4 mt-8 inline-block rounded-2xl'
+                        href={HERO_CONTENT.resumeLink}
+                        download
+                        rel='chu_he_nhung_nguoi_ban'
+                        target='_bank'
+                        variants={textVariants}
+                    >
+                        {HERO_CONTENT.resumeLinkText}
+                    </motion.a>
                 </motion.div>
 
                 <motion.div
@@ -92,6 +82,7 @@ const Hero = () => {
                     initial='hidden'
                     animate='visible'
                     variants={imageVariants}
+                    viewport={{ once: true, amount: 0.3 }}
                 >
                     <TiltedCard
                         imageSrc={avatar1}

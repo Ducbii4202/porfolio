@@ -4,7 +4,6 @@ import { clipPath, section } from 'framer-motion/client';
 import { HERO_CONTENT } from '../constants';
 import avatar1 from '../assets/avatar1.png';
 import TiltedCard from '../pages/TiltedCard';
-import Magnet from '../pages/Magnet ';
 
 const textVariants = {
     hidden: {
@@ -72,7 +71,6 @@ const Hero = () => {
                     >
                         {HERO_CONTENT.description}
                     </motion.p>
-
                     <Magnet padding={50} disabled={false} magnetStrength={50}>
                         <motion.a
                             className='bg-stone-50 text-stone-900 p-3 lg:p-4 mt-8 inline-block rounded-2xl font-semibold hover:bg-stone-200 transition-all'

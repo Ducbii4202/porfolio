@@ -6,6 +6,7 @@ import {
     RiLinkedinBoxFill as RiLinkedFill
 } from '@remixicon/react';
 import { CONTACT_CONTENT } from '../constants';
+import ShinyText from '../pages/ShinyText ';
 
 const textVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -43,7 +44,6 @@ const Contact = () => {
                 Contact
             </h2>
             <div className='h-1 w-20 bg-white mb-8' />
-
             <motion.h3
                 className='text-6xl md:text-8xl leading-none'
                 initial='hidden'
@@ -53,7 +53,6 @@ const Contact = () => {
             >
                 {CONTACT_CONTENT.headline}
             </motion.h3>
-
             <motion.p
                 className='text-lg md:text-2xl mt-6 max-w-3xl'
                 initial='hidden'
@@ -63,7 +62,6 @@ const Contact = () => {
             >
                 {CONTACT_CONTENT.description}
             </motion.p>
-
             <motion.a
                 href={`mailto:${CONTACT_CONTENT.email}`}
                 className='text-2xl md:text-3xl font-medium mt-8'
@@ -74,7 +72,6 @@ const Contact = () => {
             >
                 {CONTACT_CONTENT.email}
             </motion.a>
-
             <div className='flex gap-6 mt-10'>
                 {CONTACT_CONTENT.socialLinks.map((link, index) => {
                     const Icon =
@@ -101,15 +98,22 @@ const Contact = () => {
                     );
                 })}
             </div>
-            <motion.p
+
+            {/* <ShinyText
+                text='Just some shiny text!'
+                disabled={false}
+                speed={3}
+                className='text-sm text-stone-400 mt-36 custom-class'
+                variants={textVariants}
+            /> */}
+            <ShinyText
                 className='text-sm text-stone-400 mt-36'
                 initial='hidden'
                 whileInView='visible'
                 custom={1.6}
-                variants={textVariants}
             >
                 {CONTACT_CONTENT.footerText}
-            </motion.p>
+            </ShinyText>
         </section>
     );
 };
