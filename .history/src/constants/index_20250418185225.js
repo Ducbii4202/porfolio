@@ -107,7 +107,7 @@ export const CONTACT_CONTENT = {
         },
         {
             platform: 'LinkedIn',
-            url: 'https://www.linkedin.com/in/thanh-nguyen0402/',
+            url: 'www.linkedin.com/in/thanh-nguyen0402',
             ariaLabel: 'Connect with me on LinkedIn',
             icon: 'RiLinkedinFill'
         }

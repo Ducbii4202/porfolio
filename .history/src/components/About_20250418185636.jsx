@@ -52,7 +52,7 @@ const getTextVariants = index => ({
 const About = () => {
     return (
         <section
-            className='relative px-6 py-16 bg-gradient-to-br text-white'
+            className='relative px-6 py-16 bg-gradient-to-br   text-white'
             id='about'
         >
             <div className='relative z-10 max-w-5xl mx-auto'>

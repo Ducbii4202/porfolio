@@ -39,7 +39,10 @@ const iconVariants = {
 
 const Skill = () => {
     return (
-        <section className='px-6 py-10' id='technical'>
+        <section
+            className='py-20 flex flex-col justify-center items-center px-4 md:px-10'
+            id='technical'
+        >
             <motion.h1
                 className='text-4xl md:text-6xl font-medium tracking-tight mb-10'
                 initial={{ opacity: 0, y: -20 }}

@@ -1,20 +1,18 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { ABOUT_CONTENT } from '../constants';
+import { motion } from 'framer-motion';
 
-// Typewriter effect with hover interaction
+// Typewriter effect for heading
 const TypewriterText = ({ text }) => {
     const letters = Array.from(text);
     return (
-        <h1 className='text-4xl md:text-6xl font-bold tracking-tight mb-10 flex flex-wrap gap-1'>
+        <h1 className='text-4xl md:text-6xl font-medium tracking-normal mb-10 flex flex-wrap'>
             {letters.map((char, index) => (
                 <motion.span
                     key={index}
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.05 }}
-                    whileHover={{ scale: 1.2, color: '#facc15' }} // vàng khi hover
-                    className='cursor-default'
                 >
                     {char}
                 </motion.span>
@@ -23,7 +21,7 @@ const TypewriterText = ({ text }) => {
     );
 };
 
-// Container animation with stagger
+// Container animation for stagger
 const containerVariants = {
     hidden: {},
     visible: {
@@ -33,7 +31,7 @@ const containerVariants = {
     }
 };
 
-// Alternating paragraph entrance (left/right)
+// Alternating slide-in left/right
 const getTextVariants = index => ({
     hidden: {
         opacity: 0,
@@ -52,15 +50,12 @@ const getTextVariants = index => ({
 const About = () => {
     return (
         <section
-            className='relative px-6 py-16 bg-gradient-to-br text-white'
+            className='relative px-6 py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white'
             id='about'
         >
             <div className='relative z-10 max-w-5xl mx-auto'>
-                {/* Title */}
                 <TypewriterText text='About' />
-                <div className='h-1 w-20 mb-8 bg-white' />
-
-                {/* Paragraphs */}
+                <div className='h-1 w-20 mb-8 bg-white'></div>
                 <motion.div
                     className='space-y-10'
                     initial='hidden'
@@ -71,7 +66,7 @@ const About = () => {
                     {ABOUT_CONTENT.paragraphs.map((paragraph, index) => (
                         <motion.p
                             key={index}
-                            className='text-xl md:text-2xl lg:text-4xl leading-relaxed hover:scale-[1.01] transition-transform duration-300'
+                            className='text-xl md:text-2xl lg:text-4xl leading-relaxed'
                             variants={getTextVariants(index)}
                         >
                             {paragraph}

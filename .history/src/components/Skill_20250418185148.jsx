@@ -39,16 +39,13 @@ const iconVariants = {
 
 const Skill = () => {
     return (
-        <section className='px-6 py-10' id='technical'>
-            <motion.h1
-                className='text-4xl md:text-6xl font-medium tracking-tight mb-10'
-                initial={{ opacity: 0, y: -20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-            >
-                Project
-            </motion.h1>
-
+        <section
+            className='py-20 flex flex-col justify-center items-center px-4 md:px-10'
+            id='skill'
+        >
+            <h2 className='text-4xl md:text-6xl font-medium tracking-tight mb-10'>
+                Technical
+            </h2>
             <div className='h-1 w-20 bg-white mb-8' />
             <div className='flex flex-wrap items-center justify-center gap-6'>
                 {skills.map(({ Icon, className }, index) => (

@@ -63,9 +63,7 @@ const Projects = () => {
                                 href={project.link}
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                className='bg-white text-stone-900 font-semibold rounded-full py-2 px-4 text-sm 
-             hover:bg-gray-100 hover:border-stone-900 border border-transparent 
-             hover:border-2 transition-all duration-300 text-center w-fit'
+                                className='bg-white text-stone-900 font-semibold rounded-full py-2 px-4 text-sm hover:bg-gray-100 transition-colors duration-300 text-center w-fit'
                             >
                                 View on GitHub
                             </a>

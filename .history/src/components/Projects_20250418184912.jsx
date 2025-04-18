@@ -52,6 +52,7 @@ const Projects = () => {
                             className='absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
                         />
 
+                        {/* Overlay */}
                         <div className='relative z-10 p-6 flex flex-col justify-between h-full bg-gradient-to-t from-black/70 via-black/40 to-transparent text-white'>
                             <h2 className='text-2xl font-bold mb-4'>
                                 {project.name}
@@ -63,9 +64,7 @@ const Projects = () => {
                                 href={project.link}
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                className='bg-white text-stone-900 font-semibold rounded-full py-2 px-4 text-sm 
-             hover:bg-gray-100 hover:border-stone-900 border border-transparent 
-             hover:border-2 transition-all duration-300 text-center w-fit'
+                                className='bg-white text-stone-900 font-semibold rounded-full py-2 px-4 text-sm hover:bg-gray-100 transition-colors duration-300 text-center w-fit'
                             >
                                 View on GitHub
                             </a>

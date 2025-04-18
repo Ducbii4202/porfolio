@@ -9,7 +9,7 @@ export const LINKS = [
     { href: '#project', label: 'Project' },
     { href: '#about', label: 'About' },
     { href: '#experience', label: 'Experience' },
-    { href: '#technical', label: 'Technical' },
+    { href: '#skill', label: 'Technical' },
     { href: '#contact', label: 'Contact' }
 ];
 
@@ -107,7 +107,7 @@ export const CONTACT_CONTENT = {
         },
         {
             platform: 'LinkedIn',
-            url: 'https://www.linkedin.com/in/thanh-nguyen0402/',
+            url: 'www.linkedin.com/in/thanh-nguyen0402',
             ariaLabel: 'Connect with me on LinkedIn',
             icon: 'RiLinkedinFill'
         }

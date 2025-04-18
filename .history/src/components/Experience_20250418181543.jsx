@@ -1,7 +1,7 @@
 import React from 'react';
 import { EXPERIENCES } from '../constants';
 import { motion } from 'framer-motion';
-import SpotlightCard from '../pages/SpotlightCard';
+import PixelCard from '../pages/Pixel';
 
 const Experience = () => {
     const containerVariants = {
@@ -45,10 +45,7 @@ const Experience = () => {
             >
                 {EXPERIENCES.map((experience, index) => (
                     <motion.div key={index} variants={childVariants}>
-                        <SpotlightCard
-                            spotlightColor='rgba(0, 229, 255, 0.2)'
-                            className='custom-spotlight-card bg-white/5 p-6 rounded-2xl backdrop-blur-md border border-white/10 shadow-md hover:scale-[1.01] transition-all duration-300'
-                        >
+                        <PixelCard className='bg-white/5 p-6 rounded-2xl backdrop-blur-md border border-white/10 shadow-md hover:scale-[1.01] transition-all duration-300'>
                             <div className='text-sm md:w-1/4 mb-2 md:mb-0 p-4'>
                                 {experience.yearRange}
                             </div>
@@ -68,7 +65,7 @@ const Experience = () => {
                                     ))}
                                 </ul>
                             </div>
-                        </SpotlightCard>
+                        </PixelCard>
                     </motion.div>
                 ))}
             </motion.div>
