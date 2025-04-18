@@ -83,18 +83,32 @@ const Hero = () => {
                     animate='visible'
                     variants={imageVariants}
                 >
+                    {/* <img
+                        src={ducbii}
+                        alt='Duc Thanh'
+                        width={650}
+                        height={650}
+                        className='rounded-3xl'
+                    ></img> */}
                     <TiltedCard
                         imageSrc={ducbii}
                         alt='Duc Thanh'
-                        containerHeight='400px'
-                        containerWidth='400px'
-                        imageHeight='400px'
-                        imageWidth='400px'
+                        // altText='Kendrick Lamar - GNX Album Cover'
+                        // captionText='Kendrick Lamar - GNX'
+                        containerHeight='300px'
+                        containerWidth='300px'
+                        imageHeight='300px'
+                        imageWidth='300px'
                         rotateAmplitude={12}
                         scaleOnHover={1.2}
                         showMobileWarning={false}
                         showTooltip={true}
                         displayOverlayContent={true}
+                        // overlayContent={
+                        //     <p className='tilted-card-demo-text'>
+                        //         Kendrick Lamar - GNX
+                        //     </p>
+                        // }
                     />
                 </motion.div>
             </div>

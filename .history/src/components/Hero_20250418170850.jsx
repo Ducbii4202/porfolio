@@ -83,13 +83,22 @@ const Hero = () => {
                     animate='visible'
                     variants={imageVariants}
                 >
+                    {/* <img
+                        src={ducbii}
+                        alt='Duc Thanh'
+                        width={650}
+                        height={650}
+                        className='rounded-3xl'
+                    ></img> */}
                     <TiltedCard
                         imageSrc={ducbii}
                         alt='Duc Thanh'
-                        containerHeight='400px'
+                        // altText='Kendrick Lamar - GNX Album Cover'
+                        // captionText='Kendrick Lamar - GNX'
+                        containerHeight='450px'
                         containerWidth='400px'
-                        imageHeight='400px'
-                        imageWidth='400px'
+                        imageHeight='450px'
+                        imageWidth='450px'
                         rotateAmplitude={12}
                         scaleOnHover={1.2}
                         showMobileWarning={false}

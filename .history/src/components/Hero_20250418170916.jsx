@@ -78,10 +78,10 @@ const Hero = () => {
                 </motion.div>
 
                 <motion.div
-                    className='w-full md:w-1/2 p-8'
-                    initial='hidden'
-                    animate='visible'
-                    variants={imageVariants}
+                // className='w-full md:w-1/2 p-8'
+                // initial='hidden'
+                // animate='visible'
+                // variants={imageVariants}
                 >
                     <TiltedCard
                         imageSrc={ducbii}
