@@ -13,7 +13,7 @@ import person5 from '../assets/person5.webp';
 import person6 from '../assets/person6.webp';
 
 export const LINKS = [
-    { href: '#project', label: 'Project' },
+    { href: '#Project', label: 'Project' },
     { href: '#about', label: 'About' },
     { href: '#experience', label: 'Experience' },
     { href: '#testimonials', label: 'Testimonials' },

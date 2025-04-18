@@ -25,7 +25,7 @@ const projectVariants = {
 
 const Projects = () => {
     return (
-        <section className='px-6 py-10' id='project'>
+        <section className='px-6 py-10' id='work'>
             <h1 className='text-4xl md:text-6xl font-medium tracking-tight mb-10'>
                 Project
             </h1>
