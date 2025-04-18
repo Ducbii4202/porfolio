@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { clipPath, section } from 'framer-motion/client';
 import { HERO_CONTENT } from '../constants';
-import ducbii from '../assets/ducbii.png';
+import ducbii from '../assets/ducbii.jpg';
 
 const textVariants = {
     hidden: {

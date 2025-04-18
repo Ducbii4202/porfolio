@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { clipPath, section } from 'framer-motion/client';
 import { HERO_CONTENT } from '../constants';
 import ducbii from '../assets/ducbii.png';
+import Lanyard from '../pages/Lanyard';
 
 const textVariants = {
     hidden: {
@@ -82,6 +83,8 @@ const Hero = () => {
                     animate='visible'
                     variants={imageVariants}
                 >
+                    {/* <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} /> */}
+
                     <img
                         src={ducbii}
                         alt='Duc Thanh'
