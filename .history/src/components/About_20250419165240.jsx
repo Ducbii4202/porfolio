@@ -1,6 +1,5 @@
 import React from 'react';
 import avatar1 from '../assets/avatar1.png';
-import { ABOUT_CONTENT } from '../constants';
 
 const About = () => {
     return (
@@ -11,19 +10,15 @@ const About = () => {
             </h1>
             <div className='flex flex-warp'>
                 <div className='w-full lg:w-1/2 lg:p-8'>
-                    <div className='flex items-center justify-center'>
+                    <div className='flex items-center justifyl-center'>
                         <img
                             src={avatar1}
                             alt='about'
                             className='rounded-2xl'
                         />
                     </div>
-                </div>
-                <div className='w-full lg:w-1/2'>
-                    <div className='flex justify-center lg:justify-start'>
-                        <p className='my-2 max-w-xl py-6'>
-                            {ABOUT_CONTENT.paragraphs}
-                        </p>
+                    <div className='w-full lg:w-1/2'>
+                        <div className='flex justify-center'></div>
                     </div>
                 </div>
             </div>
