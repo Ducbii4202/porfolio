@@ -6,10 +6,10 @@ import projects5 from '../assets/projects5.webp';
 import projects6 from '../assets/projects6.webp';
 
 export const LINKS = [
-    { href: '#about', label: 'About' },
     { href: '#project', label: 'Project' },
+    { href: '#about', label: 'About' },
     { href: '#experience', label: 'Experience' },
-    { href: '#skill', label: 'Skill' },
+    { href: '#technical', label: 'Technical' },
     { href: '#contact', label: 'Contact' }
 ];
 
@@ -22,6 +22,19 @@ export const HERO_CONTENT = {
     resumeLinkText: 'Download Resume',
     resumeLink: '/resume.pdf'
 };
+
+export const IMAGE = [
+    { id: 1, image: 'projects3', height: 400 },
+    { id: 2, image: 'projects3', height: 300 },
+    { id: 3, image: 'projects3', height: 300 },
+    { id: 4, image: 'projects3', height: 300 },
+    { id: 5, image: 'projects3', height: 300 },
+    { id: 6, image: 'projects3', height: 300 },
+    { id: 7, image: 'projects3', height: 200 },
+    { id: 8, image: 'https://picsum.photos/id/39/200/300', height: 300 },
+    { id: 9, image: 'https://picsum.photos/id/85/200/300', height: 200 },
+    { id: 10, image: 'https://picsum.photos/id/103/200/300', height: 400 }
+];
 
 export const PROJECTS = [
     {

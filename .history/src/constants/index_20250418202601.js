@@ -6,10 +6,10 @@ import projects5 from '../assets/projects5.webp';
 import projects6 from '../assets/projects6.webp';
 
 export const LINKS = [
-    { href: '#about', label: 'About' },
     { href: '#project', label: 'Project' },
+    { href: '#about', label: 'About' },
     { href: '#experience', label: 'Experience' },
-    { href: '#skill', label: 'Skill' },
+    { href: '#technical', label: 'Technical' },
     { href: '#contact', label: 'Contact' }
 ];
 
