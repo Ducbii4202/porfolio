@@ -9,7 +9,7 @@ import { DiSass } from 'react-icons/di';
 import { FaNodeJs } from 'react-icons/fa6';
 import { PiFigmaLogoThin } from 'react-icons/pi';
 import { RiReactjsFill, RiTailwindCssLine } from 'react-icons/ri';
-import { SiFigma, SiMongodb } from 'react-icons/si';
+import { SiMongodb } from 'react-icons/si';
 
 const skills = [
     {

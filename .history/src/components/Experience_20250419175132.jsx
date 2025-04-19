@@ -30,15 +30,11 @@ const Experience = () => {
     };
 
     return (
-        <section className=' border-neutral-900 pb-4' id='experience'>
-            <motion.h1
-                className='my-20 text-center text-4xl'
-                initial={{ opacity: 0, y: -20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-            >
-                Experience
-            </motion.h1>
+        <section className='border-b border-neutral-900' id='experience'>
+            <h1 className='my-20 text-center text-4xl'>
+                Work
+                <span className='text-neutral-500'> Experience</span>
+            </h1>
 
             <motion.div
                 className='space-y-10'

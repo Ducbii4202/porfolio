@@ -45,8 +45,7 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                Contact Wi
-                <span className='text-neutral-500'>th Me</span>
+                Project
             </motion.h1>
 
             <motion.h3

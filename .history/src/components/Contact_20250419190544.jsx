@@ -46,7 +46,6 @@ const Contact = () => {
                 transition={{ duration: 0.6 }}
             >
                 Contact Wi
-                <span className='text-neutral-500'>th Me</span>
             </motion.h1>
 
             <motion.h3

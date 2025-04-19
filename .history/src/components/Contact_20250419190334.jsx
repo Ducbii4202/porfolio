@@ -35,10 +35,7 @@ const iconVariants = {
 
 const Contact = () => {
     return (
-        <section
-            className='min-h-screen flex flex-col justify-center px-4 md:px-10'
-            id='contact'
-        >
+        <section className='border-neutral-900 pb-4' id='contact'>
             <motion.h1
                 className='my-20 text-center text-4xl'
                 initial={{ opacity: 0, y: -20 }}
@@ -46,7 +43,7 @@ const Contact = () => {
                 transition={{ duration: 0.6 }}
             >
                 Contact Wi
-                <span className='text-neutral-500'>th Me</span>
+                <span className='text-neutral-500'>th Me </span>
             </motion.h1>
 
             <motion.h3

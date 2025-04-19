@@ -23,8 +23,8 @@ const About = () => {
                     <div className='flex justify-center lg:justify-start'>
                         <p className='my-2 max-w-xl py-6'>
                             {ABOUT_CONTENT.paragraphs1}
-                            <br />
-                            <br />
+                        </p>
+                        <p className='my-2 max-w-xl py-6'>
                             {ABOUT_CONTENT.paragraphs2}
                         </p>
                     </div>

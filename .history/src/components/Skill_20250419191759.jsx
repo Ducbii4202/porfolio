@@ -9,7 +9,7 @@ import { DiSass } from 'react-icons/di';
 import { FaNodeJs } from 'react-icons/fa6';
 import { PiFigmaLogoThin } from 'react-icons/pi';
 import { RiReactjsFill, RiTailwindCssLine } from 'react-icons/ri';
-import { SiFigma, SiMongodb } from 'react-icons/si';
+import { SiMongodb } from 'react-icons/si';
 
 const skills = [
     {
@@ -38,7 +38,7 @@ const skills = [
     },
     { Icon: DiSass, className: 'text-pink-400', label: 'Sass', level: 70 },
     {
-        Icon: SiFigma,
+        Icon: PiFigmaLogoThin,
         className: 'text-pink-500',
         label: 'Figma',
         level: 75
@@ -63,11 +63,6 @@ const skills = [
     }
 ];
 
-const radius = 50;
-const stroke = 8;
-const normalizedRadius = radius - stroke / 2;
-const circumference = 2 * Math.PI * normalizedRadius;
-
 const circleVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: (delay = 0) => ({
@@ -80,6 +75,11 @@ const circleVariants = {
         }
     })
 };
+
+const radius = 50;
+const stroke = 8;
+const normalizedRadius = radius - stroke / 2;
+const circumference = 2 * Math.PI * normalizedRadius;
 
 const CircularSkill = () => {
     return (
@@ -101,15 +101,12 @@ const CircularSkill = () => {
                     return (
                         <motion.div
                             key={index}
-                            className='group flex flex-col items-center gap-2 transition-all duration-300'
+                            className='flex flex-col items-center gap-2'
                             initial='hidden'
                             whileInView='visible'
                             viewport={{ once: true }}
                             custom={index * 0.15}
                             variants={circleVariants}
-                            whileHover={{
-                                scale: 1.1
-                            }}
                         >
                             <div className='relative w-[120px] h-[120px]'>
                                 <svg
@@ -162,9 +159,7 @@ const CircularSkill = () => {
                                 </svg>
 
                                 <div className='absolute inset-0 flex items-center justify-center'>
-                                    <Icon
-                                        className={`text-3xl group-hover:scale-110 transition-transform duration-300 ${className}`}
-                                    />
+                                    <Icon className={`text-3xl ${className}`} />
                                 </div>
                             </div>
 

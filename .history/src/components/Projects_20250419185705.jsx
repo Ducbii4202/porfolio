@@ -26,13 +26,15 @@ const Projects = () => {
     return (
         <section className='border-neutral-900 pb-4' id='project'>
             <motion.h1
-                className='my-20 text-center text-4xl'
+                className='text-4xl md:text-6xl font-medium tracking-tight mb-10'
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
                 Project
             </motion.h1>
+
+            <div className='h-1 w-20 mb-8 bg-white' />
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                 {PROJECTS.map((project, index) => (

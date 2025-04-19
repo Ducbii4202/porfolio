@@ -4,7 +4,7 @@ import { ABOUT_CONTENT } from '../constants';
 
 const About = () => {
     return (
-        <section className=' border-neutral-900 pb-4' id='about'>
+        <div className='border-b border-neutral-900 pb-4' id='about'>
             <h1 className='my-20 text-center text-4xl'>
                 About
                 <span className='text-neutral-500'> Me</span>
@@ -22,15 +22,12 @@ const About = () => {
                 <div className='w-full lg:w-1/2'>
                     <div className='flex justify-center lg:justify-start'>
                         <p className='my-2 max-w-xl py-6'>
-                            {ABOUT_CONTENT.paragraphs1}
-                            <br />
-                            <br />
-                            {ABOUT_CONTENT.paragraphs2}
+                            {ABOUT_CONTENT.paragraphs}
                         </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

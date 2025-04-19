@@ -21,12 +21,10 @@ const About = () => {
                 </div>
                 <div className='w-full lg:w-1/2'>
                     <div className='flex justify-center lg:justify-start'>
-                        <p className='my-2 max-w-xl py-6'>
-                            {ABOUT_CONTENT.paragraphs1}
-                            <br />
-                            <br />
-                            {ABOUT_CONTENT.paragraphs2}
+                        <p className='my-2 max-w-xl py-6 mb-4'>
+                            {ABOUT_CONTENT.paragraphs1}{' '}
                         </p>
+                        <p> {ABOUT_CONTENT.paragraphs2}</p>
                     </div>
                 </div>
             </div>

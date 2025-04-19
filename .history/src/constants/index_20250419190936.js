@@ -67,10 +67,8 @@ export const PROJECTS = [
 ];
 
 export const ABOUT_CONTENT = {
-    paragraphs1: [
-        'I am a final-year frontend development student with a strong passion for building modern and user-friendly web applications. Throughout my academic journey, I have worked on various personal and team projects — from single-page websites to more complex systems — with a focus on performance, responsive design, and creating seamless user experiences.     '
-    ],
-    paragraphs2: [
+    paragraphs: [
+        'I am a final-year frontend development student with a strong passion for building modern and user-friendly web applications. Throughout my academic journey, I have worked on various personal and team projects — from single-page websites to more complex systems — with a focus on performance, responsive design, and creating seamless user experiences. ',
         'I specialize in using technologies like React, Next.js, and Tailwind CSS to create responsive and scalable interfaces. My focus is on writing clean, maintainable code while collaborating with cross-functional teams to deliver projects that meet both business goals and user needs. I thrive in environments that challenge me to continuously learn and grow.'
     ]
 };

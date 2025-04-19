@@ -9,7 +9,7 @@ import { DiSass } from 'react-icons/di';
 import { FaNodeJs } from 'react-icons/fa6';
 import { PiFigmaLogoThin } from 'react-icons/pi';
 import { RiReactjsFill, RiTailwindCssLine } from 'react-icons/ri';
-import { SiFigma, SiMongodb } from 'react-icons/si';
+import { SiMongodb } from 'react-icons/si';
 
 const skills = [
     {
@@ -38,7 +38,7 @@ const skills = [
     },
     { Icon: DiSass, className: 'text-pink-400', label: 'Sass', level: 70 },
     {
-        Icon: SiFigma,
+        Icon: PiFigmaLogoThin,
         className: 'text-pink-500',
         label: 'Figma',
         level: 75
@@ -108,7 +108,9 @@ const CircularSkill = () => {
                             custom={index * 0.15}
                             variants={circleVariants}
                             whileHover={{
-                                scale: 1.1
+                                scale: 1.1,
+                                boxShadow:
+                                    '0px 0px 20px rgba(255, 255, 255, 0.15)'
                             }}
                         >
                             <div className='relative w-[120px] h-[120px]'>

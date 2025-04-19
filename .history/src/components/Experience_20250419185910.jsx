@@ -37,7 +37,8 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                Experience
+                Project
+                <span className='text-neutral-500'> Experience</span>
             </motion.h1>
 
             <motion.div
