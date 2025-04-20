@@ -2,12 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUniversity } from 'react-icons/fa';
 import avatar2 from '../assets/avatar2.png';
-import { ABOUT_CONTENT, CONTACT_CONTENT } from '../constants';
-import {
-    RiTwitterXFill,
-    RiGithubFill,
-    RiLinkedinBoxFill as RiLinkedFill
-} from '@remixicon/react';
+import { ABOUT_CONTENT } from '../constants';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
@@ -18,24 +13,12 @@ const fadeInUp = {
     }
 };
 
-const iconVariants = {
-    hidden: { opacity: 0, scale: 0 },
-    visible: (delay = 0) => ({
-        opacity: 1,
-        scale: 1,
-        transition: {
-            duration: 0.5,
-            ease: 'easeOut',
-            delay
-        }
-    })
-};
-
 const About = () => {
     return (
         <section className='border-neutral-900 pb-4' id='about'>
             <h1 className='my-20 text-center text-4xl font-bold'>
-                About <span className='text-neutral-500'>Me</span>
+                About
+                <span className='text-neutral-500'> Me</span>
             </h1>
 
             <div className='flex flex-col lg:flex-row flex-wrap'>
@@ -51,7 +34,7 @@ const About = () => {
                     />
                 </div>
 
-                {/* Text, School Info, Social Icons */}
+                {/* Text & School Info */}
                 <div className='w-full lg:w-1/2 p-4 flex flex-col justify-center lg:justify-start'>
                     <motion.p
                         initial={{ opacity: 0 }}
@@ -65,7 +48,7 @@ const About = () => {
                         {ABOUT_CONTENT.paragraphs2}
                     </motion.p>
 
-                    {/* University Info */}
+                    {/* University Info with Motion */}
                     <motion.div
                         variants={fadeInUp}
                         initial='hidden'
@@ -91,35 +74,6 @@ const About = () => {
                             </p>
                         </div>
                     </motion.div>
-
-                    {/* Social Icons */}
-                    <div className='flex justify-start gap-4 mt-8 '>
-                        {CONTACT_CONTENT.socialLinks.map((link, index) => {
-                            const Icon =
-                                link.icon === 'RiTwitterXFill'
-                                    ? RiTwitterXFill
-                                    : link.icon === 'RiGithubFill'
-                                    ? RiGithubFill
-                                    : RiLinkedFill;
-
-                            return (
-                                <motion.a
-                                    key={link.platform}
-                                    href={link.url}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    aria-label={link.ariaLabel}
-                                    initial='hidden'
-                                    whileInView='visible'
-                                    custom={index * 0.2}
-                                    variants={iconVariants}
-                                    className='hover:scale-110 transition-transform'
-                                >
-                                    <Icon size={30} />
-                                </motion.a>
-                            );
-                        })}
-                    </div>
                 </div>
             </div>
         </section>

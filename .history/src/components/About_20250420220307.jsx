@@ -93,7 +93,7 @@ const About = () => {
                     </motion.div>
 
                     {/* Social Icons */}
-                    <div className='flex justify-start gap-4 mt-8 '>
+                    <div className='flex justify-start gap-4 mt-8 text-stone-900 dark:text-stone-9'>
                         {CONTACT_CONTENT.socialLinks.map((link, index) => {
                             const Icon =
                                 link.icon === 'RiTwitterXFill'

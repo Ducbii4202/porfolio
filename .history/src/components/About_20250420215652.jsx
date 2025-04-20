@@ -35,7 +35,8 @@ const About = () => {
     return (
         <section className='border-neutral-900 pb-4' id='about'>
             <h1 className='my-20 text-center text-4xl font-bold'>
-                About <span className='text-neutral-500'>Me</span>
+                About
+                <span className='text-neutral-500'> Me</span>
             </h1>
 
             <div className='flex flex-col lg:flex-row flex-wrap'>
@@ -51,7 +52,7 @@ const About = () => {
                     />
                 </div>
 
-                {/* Text, School Info, Social Icons */}
+                {/* Text & School Info */}
                 <div className='w-full lg:w-1/2 p-4 flex flex-col justify-center lg:justify-start'>
                     <motion.p
                         initial={{ opacity: 0 }}
@@ -65,7 +66,7 @@ const About = () => {
                         {ABOUT_CONTENT.paragraphs2}
                     </motion.p>
 
-                    {/* University Info */}
+                    {/* University Info with Motion */}
                     <motion.div
                         variants={fadeInUp}
                         initial='hidden'
@@ -91,35 +92,32 @@ const About = () => {
                             </p>
                         </div>
                     </motion.div>
+                </div>
+                <div className='flex gap-6 mt-10'>
+                    {CONTACT_CONTENT.socialLinks.map((link, index) => {
+                        const Icon =
+                            link.icon === 'RiTwitterXFill'
+                                ? RiTwitterXFill
+                                : link.icon === 'RiGithubFill'
+                                ? RiGithubFill
+                                : RiLinkedFill;
 
-                    {/* Social Icons */}
-                    <div className='flex justify-start gap-4 mt-8 '>
-                        {CONTACT_CONTENT.socialLinks.map((link, index) => {
-                            const Icon =
-                                link.icon === 'RiTwitterXFill'
-                                    ? RiTwitterXFill
-                                    : link.icon === 'RiGithubFill'
-                                    ? RiGithubFill
-                                    : RiLinkedFill;
-
-                            return (
-                                <motion.a
-                                    key={link.platform}
-                                    href={link.url}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    aria-label={link.ariaLabel}
-                                    initial='hidden'
-                                    whileInView='visible'
-                                    custom={index * 0.2}
-                                    variants={iconVariants}
-                                    className='hover:scale-110 transition-transform'
-                                >
-                                    <Icon size={30} />
-                                </motion.a>
-                            );
-                        })}
-                    </div>
+                        return (
+                            <motion.a
+                                key={link.platform}
+                                href={link.url}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                aria-label={link.ariaLabel}
+                                initial='hidden'
+                                whileInView='visible'
+                                custom={1.0 + index * 0.2}
+                                variants={iconVariants}
+                            >
+                                <Icon size={36} />
+                            </motion.a>
+                        );
+                    })}
                 </div>
             </div>
         </section>
