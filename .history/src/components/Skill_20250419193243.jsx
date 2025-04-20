@@ -9,7 +9,7 @@ import { DiSass } from 'react-icons/di';
 import { FaNodeJs } from 'react-icons/fa6';
 import { PiFigmaLogoThin } from 'react-icons/pi';
 import { RiReactjsFill, RiTailwindCssLine } from 'react-icons/ri';
-import { SiFigma, SiMongodb, SiNodedotjs } from 'react-icons/si';
+import { SiFigma, SiMongodb } from 'react-icons/si';
 
 const skills = [
     {
@@ -44,7 +44,7 @@ const skills = [
         level: 75
     },
     {
-        Icon: SiNodedotjs,
+        Icon: FaNodeJs,
         className: 'text-green-500',
         label: 'Node.js',
         level: 85

@@ -9,7 +9,7 @@ import { DiSass } from 'react-icons/di';
 import { FaNodeJs } from 'react-icons/fa6';
 import { PiFigmaLogoThin } from 'react-icons/pi';
 import { RiReactjsFill, RiTailwindCssLine } from 'react-icons/ri';
-import { SiFigma, SiMongodb, SiNodedotjs } from 'react-icons/si';
+import { SiFigma, SiMongodb } from 'react-icons/si';
 
 const skills = [
     {
@@ -44,7 +44,7 @@ const skills = [
         level: 75
     },
     {
-        Icon: SiNodedotjs,
+        Icon: FaNodeJs,
         className: 'text-green-500',
         label: 'Node.js',
         level: 85
@@ -83,7 +83,7 @@ const circleVariants = {
 
 const CircularSkill = () => {
     return (
-        <section className='py-20 px-3' id='skill'>
+        <section className='py-20 px-6' id='skill'>
             <motion.h1
                 className='text-center text-4xl font-bold mb-12'
                 initial={{ opacity: 0, y: -20 }}
