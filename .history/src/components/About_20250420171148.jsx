@@ -3,6 +3,12 @@ import { motion } from 'framer-motion';
 import { FaUniversity } from 'react-icons/fa';
 import avatar2 from '../assets/avatar2.png';
 import { ABOUT_CONTENT } from '../constants';
+import {
+    RiTwitterXFill,
+    RiGithubFill,
+    RiLinkedinBoxFill as RiLinkedFill
+} from '@remixicon/react';
+import { CONTACT_CONTENT } from '../constants';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
@@ -74,6 +80,32 @@ const About = () => {
                             </p>
                         </div>
                     </motion.div>
+                </div>
+                <div className='flex gap-6 mt-10'>
+                    {CONTACT_CONTENT.socialLinks.map((link, index) => {
+                        const Icon =
+                            link.icon === 'RiTwitterXFill'
+                                ? RiTwitterXFill
+                                : link.icon === 'RiGithubFill'
+                                ? RiGithubFill
+                                : RiLinkedFill;
+
+                        return (
+                            <motion.a
+                                key={link.platform}
+                                href={link.url}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                aria-label={link.ariaLabel}
+                                initial='hidden'
+                                whileInView='visible'
+                                custom={1.0 + index * 0.2}
+                                variants={iconVariants}
+                            >
+                                <Icon size={36} />
+                            </motion.a>
+                        );
+                    })}
                 </div>
             </div>
         </section>

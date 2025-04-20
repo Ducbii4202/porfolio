@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUniversity } from 'react-icons/fa';
-import avatar2 from '../assets/avatar2.png';
+import avatar1 from '../assets/avatar1.png';
 import { ABOUT_CONTENT } from '../constants';
 
 const fadeInUp = {
@@ -28,7 +28,7 @@ const About = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
-                        src={avatar2}
+                        src={avatar1}
                         alt='about'
                         className='rounded-2xl w-80 h-auto object-cover'
                     />

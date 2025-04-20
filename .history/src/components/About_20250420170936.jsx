@@ -74,6 +74,32 @@ const About = () => {
                             </p>
                         </div>
                     </motion.div>
+                    <div className='flex gap-6 mt-10'>
+                        {CONTACT_CONTENT.socialLinks.map((link, index) => {
+                            const Icon =
+                                link.icon === 'RiTwitterXFill'
+                                    ? RiTwitterXFill
+                                    : link.icon === 'RiGithubFill'
+                                    ? RiGithubFill
+                                    : RiLinkedFill;
+
+                            return (
+                                <motion.a
+                                    key={link.platform}
+                                    href={link.url}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    aria-label={link.ariaLabel}
+                                    initial='hidden'
+                                    whileInView='visible'
+                                    custom={1.0 + index * 0.2}
+                                    variants={iconVariants}
+                                >
+                                    <Icon size={36} />
+                                </motion.a>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </section>
