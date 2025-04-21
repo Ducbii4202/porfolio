@@ -90,20 +90,18 @@ const Experience = () => {
                             className='custom-spotlight-card bg-white/5 p-6 rounded-2xl backdrop-blur-md border border-white/10 shadow-md hover:scale-[1.01] transition-all duration-300'
                         >
                             <div className='text-sm md:w-1/4 mb-2 md:mb-0 p-4'>
-                                March 2021 - November 2024
+                                March 2021
                             </div>
                             <div className='max-w-3xl backdrop-blur-3xl p-4 bg-stone-600/10 rounded-lg'>
                                 <h2 className='text-2xl mb-2'>
                                     SoFo Home Company
                                 </h2>
-                                <h2 className='text-l mb-2'>
-                                    Property Consultant
-                                </h2>
+                                <h2 className='text-l mb-2'></h2>
                                 <p className='text-sm italic text-gray-400'>
-                                    District 9
+                                    {experience.location}
                                 </p>
                                 <ul className='list-disc list-inside space-y-2 text-base text-gray-100 leading-relaxed pl-5'>
-                                    {experience.des.map((item, i) => (
+                                    {experience.description.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))}
                                 </ul>

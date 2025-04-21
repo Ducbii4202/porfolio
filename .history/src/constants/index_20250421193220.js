@@ -85,12 +85,17 @@ export const EXPERIENCES = [
             'Developed a real-time chat feature using WebSockets, resulting in a 20% increase in user engagement and customer satisfaction',
             'Collaborating with cross-functional teams to deliver high-quality, user-centric solutions.',
             'Driving innovation through continuous improvements in performance and UI/UX design.'
-        ],
-        des: [
-            'Understand and analyze client requirements based on their specific needs and preferences',
-            'Provide tailored solutions with buying and selling price ranges that align with the clients budget and investment goals',
-            'Source high-quality properties that match the client’s criteria and targeted market segment',
-            'Offer strategic alternatives and flexible solutions when clients adjust their requirements or shift their original expectations'
+        ]
+    },
+    {
+        yearRange1: 'March 2021',
+        company1: ' SoFo Home Company',
+        title1: 'Saler',
+        location1: 'District 9',
+        description: [
+            'Developed a real-time chat feature using WebSockets, resulting in a 20% increase in user engagement and customer satisfaction',
+            'Collaborating with cross-functional teams to deliver high-quality, user-centric solutions.',
+            'Driving innovation through continuous improvements in performance and UI/UX design.'
         ]
     }
 ];

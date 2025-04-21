@@ -96,14 +96,12 @@ const Experience = () => {
                                 <h2 className='text-2xl mb-2'>
                                     SoFo Home Company
                                 </h2>
-                                <h2 className='text-l mb-2'>
-                                    Property Consultant
-                                </h2>
+                                <h2 className='text-l mb-2'>Saler</h2>
                                 <p className='text-sm italic text-gray-400'>
                                     District 9
                                 </p>
                                 <ul className='list-disc list-inside space-y-2 text-base text-gray-100 leading-relaxed pl-5'>
-                                    {experience.des.map((item, i) => (
+                                    {experience.description.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))}
                                 </ul>
