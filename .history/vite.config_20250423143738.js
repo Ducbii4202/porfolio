@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     plugins: [react(), tailwindcss()],
     assetsInclude: ['**/*.glb'],
-    base: '/porfolio/'
+    base: '/porfolio/' // ✅ chính xác theo repo
 });
