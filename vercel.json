@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "builds": [{ "src": "vite.config.js", "use": "@vercel/static-build" }],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
   "routes": [
-    { "src": "/porfolio/(.*)", "dest": "/porfolio/" },
-    { "src": "/porfolio", "dest": "/porfolio/index.html" }
+    {
+      "src": "/porfolio/(.*)",
+      "dest": "/porfolio/$1"
+    },
+    {
+      "src": "/porfolio",
+      "dest": "/porfolio/index.html"
+    }
   ]
 }
