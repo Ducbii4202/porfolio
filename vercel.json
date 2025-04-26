@@ -1,19 +1,15 @@
 {
   "version": 2,
-  "builds": [
+  "public": true,
+  "cleanUrls": true,
+  "rewrites": [
     {
-      "src": "/porfolio/index.html",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/porfolio/(.*)",
-      "dest": "/porfolio/$1"
+      "source": "/porfolio",
+      "destination": "/porfolio/index.html"
     },
     {
-      "src": "/porfolio",
-      "dest": "/porfolio/index.html"
+      "source": "/porfolio/:match*",
+      "destination": "/porfolio/:match*"
     }
   ]
 }
