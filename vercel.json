@@ -8,14 +8,6 @@
   ],
   "routes": [
     {
-      "src": "/porfolio",
-      "dest": "/porfolio/index.html"
-    },
-    {
-      "src": "/porfolio/(.*)",
-      "dest": "/porfolio/$1"
-    },
-    {
       "handle": "filesystem"
     },
     {
