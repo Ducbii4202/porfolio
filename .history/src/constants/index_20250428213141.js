@@ -7,7 +7,7 @@ import projects6 from '../assets/projects6.webp';
 
 export const LINKS = [
     { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Projects' },
+    { href: '#project', label: 'Project' },
     { href: '#experience', label: 'Experience' },
     { href: '#skills', label: 'Skills' },
     { href: '#contact', label: 'Contact' }

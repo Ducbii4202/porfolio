@@ -31,7 +31,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                Projects
+                Project
             </motion.h1>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
