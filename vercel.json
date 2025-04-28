@@ -1,19 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "/porfolio/index.html",
-      "use": "@vercel/static-build"
-    }
-  ],
+  "public": true,
   "routes": [
-    {
-      "src": "/porfolio/(.*)",
-      "dest": "/porfolio/$1"
-    },
-    {
-      "src": "/porfolio",
-      "dest": "/porfolio/index.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
