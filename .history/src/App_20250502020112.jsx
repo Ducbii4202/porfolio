@@ -5,16 +5,17 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Experience from './components/Experience';
 import Skill from './components/Skill';
+
 import Hero1 from './components/Hero1';
 import Contact1 from './components/Contact1';
-import { Toaster } from 'react-hot-toast'; // ✅ IMPORT TOASTER
 
 const App = () => {
     return (
         <>
             <BlurBackground />
-            <Navbar /> {/* ✅ Chỉ giữ 1 lần */}
+            <Navbar />
             <main className='antialiased overflow-x-hidden max-w-7xl mx-auto relative mt-5 z-10'>
+                <Navbar />
                 <Hero1 />
                 <About />
                 <Projects />
@@ -22,8 +23,7 @@ const App = () => {
                 <Skill />
                 <Contact1 />
             </main>
-            <Toaster position='top-center' reverseOrder={false} />{' '}
-            {/* ✅ Toast dùng toàn cục */}
+            <Toaster position='top-center' reverseOrder={false} />
         </>
     );
 };

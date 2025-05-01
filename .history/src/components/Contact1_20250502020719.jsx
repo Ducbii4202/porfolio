@@ -142,7 +142,7 @@ const Contact1 = () => {
                         whileTap={!isLoading ? { scale: 0.95 } : {}}
                         type='submit'
                         disabled={isLoading}
-                        className={`px-6 py-2 cursor-pointer font-semibold rounded-md transition duration-300 ${
+                        className={`px-6 py-2 font-semibold rounded-md transition duration-300 ${
                             isLoading
                                 ? 'relative bg-gray-400 cursor-not-allowed text-white'
                                 : 'bg-blue-600 hover:bg-blue-700 text-white'

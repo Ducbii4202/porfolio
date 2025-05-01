@@ -68,7 +68,7 @@ const About = () => {
                             y: -2,
                             transition: { type: 'spring', stiffness: 200 }
                         }}
-                        className='max-w-xl py-6 px-2 rounded-lg text-justify leading-relaxed transition-all duration-300 hover:text-blue-500 dark:hover:text-blue-400 '
+                        className='max-w-xl py-6 px-2 rounded-lg text-justify leading-relaxed transition-all duration-300 hover:text-blue-500 hover:bg-neutral-100 dark:hover:text-blue-400 dark:hover:bg-neutral-800'
                     >
                         {ABOUT_CONTENT.paragraphs1}
                         <br />
@@ -112,7 +112,7 @@ const About = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className='inline-flex items-center gap-2 bg-neutral-800 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300'
+                            className='inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300'
                             whileHover={{ scale: 1.05 }}
                         >
                             <motion.div

@@ -24,7 +24,12 @@ const skills = [
     },
     { Icon: DiSass, className: 'text-pink-400', label: 'Sass', level: 70 },
     { Icon: SiFigma, className: 'text-pink-500', label: 'Figma', level: 75 },
-    { Icon: SiNodedotjs, className: 'text-green-500', label: 'Node.js' },
+    {
+        Icon: SiNodedotjs,
+        className: 'text-green-500',
+        label: 'Node.js',
+        level: 75
+    },
     { Icon: SiMongodb, className: 'text-green-500', label: 'MongoDB' },
     { Icon: BiLogoPostgresql, className: 'text-sky-700', label: 'PostgreSQL' }
 ];

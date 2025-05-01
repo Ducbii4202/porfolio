@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
-import { FaCheckCircle, FaTimesCircle, FaSpinner } from 'react-icons/fa';
+import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 
 const Contact1 = () => {
     const form = useRef();
@@ -136,22 +136,24 @@ const Contact1 = () => {
                     ></textarea>
                 </div>
 
-                <div className='text-center '>
+                <div className='text-center'>
                     <motion.button
                         whileHover={!isLoading ? { scale: 1.05 } : {}}
                         whileTap={!isLoading ? { scale: 0.95 } : {}}
                         type='submit'
                         disabled={isLoading}
-                        className={`px-6 py-2 cursor-pointer font-semibold rounded-md transition duration-300 ${
+                        className={`px-6 py-2 font-semibold rounded-md transition duration-300 ${
                             isLoading
-                                ? 'relative bg-gray-400 cursor-not-allowed text-white'
+                                ? 'relative overflow-hidden bg-gray-400 cursor-not-allowed text-white'
                                 : 'bg-blue-600 hover:bg-blue-700 text-white'
                         }`}
                     >
                         {isLoading ? (
-                            <span className='flex items-center justify-center gap-2'>
-                                <FaSpinner className='animate-spin' />
-                                Đang gửi...
+                            <span className='flex items-center justify-center'>
+                                <span className='absolute inline-flex h-6 w-6 rounded-full bg-blue-400 opacity-75 animate-ping'></span>
+                                <span className='relative text-white'>
+                                    Đang gửi...
+                                </span>
                             </span>
                         ) : (
                             'Send'

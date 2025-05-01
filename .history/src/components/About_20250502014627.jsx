@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaUniversity, FaDownload } from 'react-icons/fa';
+import { FaUniversity } from 'react-icons/fa';
 import avatar2 from '../assets/avatar2.png';
 import { ABOUT_CONTENT, CONTACT_CONTENT } from '../constants';
 import {
@@ -8,7 +8,6 @@ import {
     RiGithubFill,
     RiLinkedinBoxFill as RiLinkedFill
 } from '@remixicon/react';
-import { toast, Toaster } from 'react-hot-toast';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
@@ -33,10 +32,6 @@ const iconVariants = {
 };
 
 const About = () => {
-    const handleDownload = () => {
-        toast.success('Download started!');
-    };
-
     return (
         <section className='border-neutral-900 pb-4' id='about'>
             <h1 className='my-20 text-center text-4xl font-bold'>
@@ -56,9 +51,8 @@ const About = () => {
                     />
                 </div>
 
-                {/* Text + School + CV + Socials */}
+                {/* Text, School Info, Social Icons */}
                 <div className='w-full lg:w-1/2 p-4 flex flex-col justify-center lg:justify-start'>
-                    {/* About text */}
                     <motion.p
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -68,7 +62,7 @@ const About = () => {
                             y: -2,
                             transition: { type: 'spring', stiffness: 200 }
                         }}
-                        className='max-w-xl py-6 px-2 rounded-lg text-justify leading-relaxed transition-all duration-300 hover:text-blue-500 dark:hover:text-blue-400 '
+                        className='max-w-xl py-6 px-2 rounded-lg text-justify leading-relaxed transition-all duration-300 hover:text-blue-500 hover:bg-neutral-100 dark:hover:text-blue-400 dark:hover:bg-neutral-800'
                     >
                         {ABOUT_CONTENT.paragraphs1}
                         <br />
@@ -103,34 +97,8 @@ const About = () => {
                         </div>
                     </motion.div>
 
-                    {/* Download CV Button */}
-                    <div className='mt-4'>
-                        <motion.a
-                            href='/cv.pdf'
-                            download
-                            onClick={handleDownload}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5 }}
-                            className='inline-flex items-center gap-2 bg-neutral-800 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300'
-                            whileHover={{ scale: 1.05 }}
-                        >
-                            <motion.div
-                                animate={{ rotate: [0, 360] }}
-                                transition={{
-                                    repeat: Infinity,
-                                    duration: 1,
-                                    ease: 'linear'
-                                }}
-                            >
-                                <FaDownload />
-                            </motion.div>
-                            Download CV
-                        </motion.a>
-                    </div>
-
                     {/* Social Icons */}
-                    <div className='flex justify-start gap-4 mt-8'>
+                    <div className='flex justify-start gap-4 mt-8 '>
                         {CONTACT_CONTENT.socialLinks.map((link, index) => {
                             const Icon =
                                 link.icon === 'RiTwitterXFill'
@@ -159,9 +127,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Toast Notification */}
-            <Toaster position='bottom-right' reverseOrder={false} />
         </section>
     );
 };
