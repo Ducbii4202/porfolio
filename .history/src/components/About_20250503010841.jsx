@@ -97,66 +97,8 @@ const About = () => {
                             <p>
                                 <strong>Major:</strong> Software Engineer
                             </p>
-                            <p>
-                                <strong>GPA:</strong> 7.0
-                            </p>
                         </div>
                     </motion.div>
-
-                    {/* Download CV Button */}
-                    <div className='mt-4'>
-                        <motion.a
-                            href='/cv.pdf'
-                            download
-                            onClick={handleDownload}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5 }}
-                            className='inline-flex items-center gap-2 bg-neutral-800 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300'
-                            whileHover={{ scale: 1.05 }}
-                        >
-                            <motion.div
-                                animate={{ rotate: [0, 360] }}
-                                transition={{
-                                    repeat: Infinity,
-                                    duration: 1,
-                                    ease: 'linear'
-                                }}
-                            >
-                                <FaDownload />
-                            </motion.div>
-                            Download CV
-                        </motion.a>
-                    </div>
-
-                    {/* Social Icons */}
-                    <div className='flex justify-start gap-4 mt-8'>
-                        {CONTACT_CONTENT.socialLinks.map((link, index) => {
-                            const Icon =
-                                link.icon === 'RiTwitterXFill'
-                                    ? RiTwitterXFill
-                                    : link.icon === 'RiGithubFill'
-                                    ? RiGithubFill
-                                    : RiLinkedFill;
-
-                            return (
-                                <motion.a
-                                    key={link.platform}
-                                    href={link.url}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    aria-label={link.ariaLabel}
-                                    initial='hidden'
-                                    whileInView='visible'
-                                    custom={index * 0.2}
-                                    variants={iconVariants}
-                                    className='hover:scale-110 transition-transform'
-                                >
-                                    <Icon size={30} />
-                                </motion.a>
-                            );
-                        })}
-                    </div>
                 </div>
             </div>
 
