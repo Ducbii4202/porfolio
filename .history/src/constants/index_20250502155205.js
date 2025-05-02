@@ -68,7 +68,7 @@ export const PROJECTS = [
 
 export const ABOUT_CONTENT = {
     paragraphs1: [
-        'As a final-year Frontend Development student, I am passionate about creating modern, user-friendly web applications. I have experience building both individual and team projects — from single-page applications to scalable web systems — with a strong focus on performance, responsive design, and clean code.'
+        'As a final-year Frontend Development student, I am passionate about crafting modern, user-centric web applications. Throughout my academic journey, I’ve contributed to both individual and team projects, ranging from single-page sites to dynamic, scalable systems, with a strong emphasis on performance, responsive design, and intuitive user experiences'
     ],
     paragraphs2: [
         'My technical skill set includes React, Next.js, and Tailwind CSS, which I use to develop clean, maintainable, and scalable interfaces. I thrive in collaborative environments, working effectively with cross-functional teams to align technical execution with business objectives. I’m eager to take on new challenges that push me to grow continuously as a developer.'
@@ -79,7 +79,7 @@ export const EXPERIENCES = [
     {
         yearRange: 'January 2024 — April 2024',
         company: ' Amazing Tech Company',
-        title: 'Intern Frontend Developer',
+        title: 'Intern Frontend Engineer',
         location: 'District Tan Phu',
         description: [
             'Developed a real-time chat feature using WebSockets, resulting in a 20% increase in user engagement and customer satisfaction',
@@ -89,7 +89,7 @@ export const EXPERIENCES = [
         des: [
             'Understand and analyze client requirements based on their specific needs and preferences',
             'Provide tailored solutions with buying and selling price ranges that align with the clients budget and investment goals',
-            'Source high quality properties that match the client’s criteria and targeted market segment',
+            'Source high-quality properties that match the client’s criteria and targeted market segment',
             'Offer strategic alternatives and flexible solutions when clients adjust their requirements or shift their original expectations'
         ]
     }

@@ -68,7 +68,7 @@ export const PROJECTS = [
 
 export const ABOUT_CONTENT = {
     paragraphs1: [
-        'As a final-year Frontend Development student, I am passionate about creating modern, user-friendly web applications. I have experience building both individual and team projects — from single-page applications to scalable web systems — with a strong focus on performance, responsive design, and clean code.'
+        'As a final-year Frontend Developer student, I am passionate about crafting modern, user-centric web applications. Throughout my academic journey, I’ve contributed to both individual and team projects, ranging from single-page sites to dynamic, scalable systems, with a strong emphasis on performance, responsive design, and intuitive user experiences'
     ],
     paragraphs2: [
         'My technical skill set includes React, Next.js, and Tailwind CSS, which I use to develop clean, maintainable, and scalable interfaces. I thrive in collaborative environments, working effectively with cross-functional teams to align technical execution with business objectives. I’m eager to take on new challenges that push me to grow continuously as a developer.'
