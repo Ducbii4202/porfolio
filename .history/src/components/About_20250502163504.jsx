@@ -68,7 +68,7 @@ const About = () => {
                             y: -2,
                             transition: { type: 'spring', stiffness: 200 }
                         }}
-                        className='max-w-xl py-6 px-2 rounded-lg text-justify leading-relaxed transition-all duration-300 '
+                        className='max-w-xl py-6 px-2 rounded-lg text-justify leading-relaxed transition-all duration-300 hover:text-blue-500 dark:hover:text-blue-400 '
                     >
                         {ABOUT_CONTENT.paragraphs1}
                         <br />
