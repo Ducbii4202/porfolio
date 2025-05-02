@@ -128,7 +128,7 @@ const CircularSkill = () => {
                         onClick={() => setSelectedCategory(category)}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className={`relative px-4 py-2 text-sm font-medium border rounded-full transition-colors duration-300 cursor-pointer ${
+                        className={`relative px-4 py-2 text-sm font-medium border rounded-full transition-colors duration-300 ${
                             selectedCategory === category
                                 ? 'bg-white text-black'
                                 : 'text-white border-white'
@@ -171,7 +171,7 @@ const CircularSkill = () => {
                             return (
                                 <motion.div
                                     key={label}
-                                    className='flex flex-col items-center gap-2 transition-all duration-300 cursor-pointer'
+                                    className='flex flex-col items-center gap-2 transition-all duration-300'
                                     initial='hidden'
                                     whileInView='visible'
                                     viewport={{ once: true }}

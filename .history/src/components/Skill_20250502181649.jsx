@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     BiLogoJavascript,
@@ -80,7 +80,11 @@ const circleVariants = {
     visible: (delay = 0) => ({
         opacity: 1,
         scale: 1,
-        transition: { duration: 0.6, ease: 'easeOut', delay }
+        transition: {
+            duration: 0.6,
+            ease: 'easeOut',
+            delay
+        }
     })
 };
 
@@ -92,21 +96,11 @@ const fadeVariants = {
 
 const CircularSkill = () => {
     const [selectedCategory, setSelectedCategory] = useState('All');
-    const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
-    const tabRefs = useRef({});
 
     const filteredSkills =
         selectedCategory === 'All'
             ? skills
             : skills.filter(skill => skill.category === selectedCategory);
-
-    useEffect(() => {
-        const el = tabRefs.current[selectedCategory];
-        if (el) {
-            const { offsetLeft, offsetWidth } = el;
-            setUnderlineStyle({ left: offsetLeft, width: offsetWidth });
-        }
-    }, [selectedCategory]);
 
     return (
         <section className='pt-16 pb-8 px-3' id='skills'>
@@ -119,41 +113,32 @@ const CircularSkill = () => {
                 Skills
             </motion.h1>
 
-            {/* Tabs */}
-            <div className='relative flex justify-center gap-4 mb-6 flex-wrap'>
+            {/* Category Tabs */}
+            <div className='flex justify-center gap-4 mb-6 flex-wrap relative'>
                 {categories.map(category => (
                     <motion.button
                         key={category}
-                        ref={el => (tabRefs.current[category] = el)}
                         onClick={() => setSelectedCategory(category)}
-                        whileHover={{ scale: 1.05 }}
+                        whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
-                        className={`relative px-4 py-2 text-sm font-medium border rounded-full transition-colors duration-300 cursor-pointer ${
+                        className={`relative px-4 py-2 text-sm font-medium cursor-pointer border rounded-full transition-colors duration-300 ${
                             selectedCategory === category
                                 ? 'bg-white text-black'
                                 : 'text-white border-white'
                         }`}
                     >
                         {category}
+                        {selectedCategory === category && (
+                            <motion.div
+                                layoutId='underline'
+                                className='absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-[2px] bg-pink-400 rounded-full'
+                            />
+                        )}
                     </motion.button>
                 ))}
-
-                {/* Animated underline */}
-                <motion.div
-                    layout
-                    className='absolute h-[2px] bg-pink-400 rounded-full bottom-0'
-                    animate={underlineStyle}
-                    transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                    style={{
-                        position: 'absolute',
-                        bottom: -6,
-                        left: underlineStyle.left,
-                        width: underlineStyle.width
-                    }}
-                />
             </div>
 
-            {/* Skills */}
+            {/* Skills Grid */}
             <AnimatePresence mode='wait'>
                 <motion.div
                     key={selectedCategory}
@@ -171,7 +156,7 @@ const CircularSkill = () => {
                             return (
                                 <motion.div
                                     key={label}
-                                    className='flex flex-col items-center gap-2 transition-all duration-300 cursor-pointer'
+                                    className='flex flex-col items-center gap-2 transition-all duration-300'
                                     initial='hidden'
                                     whileInView='visible'
                                     viewport={{ once: true }}
@@ -223,7 +208,7 @@ const CircularSkill = () => {
                                                 >
                                                     <stop
                                                         offset='0%'
-                                                        stopColor='#d946ef'
+                                                        // stopColor='#d946ef'
                                                     />
                                                     <stop
                                                         offset='100%'
