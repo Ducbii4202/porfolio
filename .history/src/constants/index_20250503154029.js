@@ -30,34 +30,34 @@ export const PROJECTS = [
         // link: 'https://github.com/GinTee7/HR-Management'
     },
     {
-        name: 'Human Detection and Face ID Based Attendance System Graduation Project',
+        name: 'Human Detection and Face ID-Based Attendance System – Graduation Project',
         description:
-            'Integrating AI Based Human Detection and Facial Recognition',
+            'Integrating AI-Based Human Detection and Facial Recognition',
         image: projects2
         // link: 'https://github.com/HanShinVN/chu_he_nhung_nguoi_ban'
     },
     {
         name: 'Building a website to support creating and taking quizzes ',
         description:
-            'Website to register Admin can managament Users and create Quiz',
+            'Website to register. Admin can managament Users and create Quiz',
         image: projects3
         // link: 'https://github.com/Ducbii4202/study-react'
     },
     {
-        name: 'Resell event tickets Class Project',
+        name: 'Resell event tickets- Class Project',
         description:
-            'A website that facilitates the easy and fast resale of tickets while they are still valid',
+            'A website that facilitates the easy and fast resale of tickets while they are still valid.',
         image: projects4
         // link: 'https://github.com/DatVX02/SWD392--ChienNV33'
     },
     {
-        name: 'SimpleMovieWebsite Coursera Project',
-        description: 'Website to watch movies online ',
+        name: 'SimpleMovieWebsite- Coursera Project',
+        description: 'Website to watch movies online Technologies:  ',
         image: projects5
         // link: 'https://github.com/Ducbii4202/react-simple-movie'
     },
     {
-        name: 'License Real Class Project',
+        name: 'License Real- Class Project',
         description:
             'Website to register for the online B2 drivers license course Technologies',
         image: projects6
@@ -82,8 +82,8 @@ export const EXPERIENCES = [
         location: 'District Tan Phu',
         description: [
             'Developed a real-time chat feature using WebSockets, resulting in a 20% increase in user engagement and customer satisfaction',
-            'Collaborating with cross-functional teams to deliver high-quality, user-centric solutions',
-            'Driving innovation through continuous improvements in performance and UI/UX design'
+            'Collaborating with cross-functional teams to deliver high-quality, user-centric solutions.',
+            'Driving innovation through continuous improvements in performance and UI/UX design.'
         ],
         des: [
             'Understand and analyze client requirements based on their specific needs and preferences',

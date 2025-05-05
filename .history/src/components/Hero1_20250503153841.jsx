@@ -114,7 +114,7 @@ const Hero1 = () => {
                 </div>
 
                 {/* Avatar + Download Button */}
-                <div className='w-full lg:w-1/2 flex flex-col mt-8 items-center mb-10 lg:mb-0'>
+                <div className='w-full lg:w-1/2 flex flex-col mt-7 items-center mb-10 lg:mb-0'>
                     <motion.img
                         src={avatar1}
                         alt='avatar'

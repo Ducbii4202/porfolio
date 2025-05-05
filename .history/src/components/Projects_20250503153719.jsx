@@ -46,32 +46,35 @@ const Projects = () => {
                         title={project.stack}
                     >
                         {/* Background Image */}
-                        <motion.img
+                        <img
                             src={project.image}
                             alt={project.name}
                             className='absolute inset-0 w-full h-full object-cover opacity-70 
                          group-hover:scale-110 group-hover:brightness-110 
                          transition-transform duration-500 ease-out'
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ duration: 0.5 }}
                         />
 
                         {/* Overlay Content */}
-                        <div className='relative z-10 h-full flex flex-col justify-center items-center p-6 text-center'>
-                            <motion.div
-                                className='bg-gray-800/80 text-white rounded-lg p-4 shadow-lg backdrop-blur-sm w-full max-w-[90%]'
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 0.6 }}
-                            >
+                        <div className='relative z-10 h-full flex flex-col justify-between items-center p-6 text-center'>
+                            <div className='bg-gray-800/80 text-white rounded-lg p-4 shadow-lg backdrop-blur-sm w-full max-w-[90%]'>
                                 <h2 className='text-xl font-bold mb-2'>
                                     {project.name}
                                 </h2>
                                 <p className='text-sm text-gray-300'>
                                     {project.description}
                                 </p>
-                            </motion.div>
+                            </div>
+
+                            {/* <a
+                                href={project.link}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='mt-auto bg-white text-black font-semibold rounded-full py-2 px-6 text-sm 
+                           hover:bg-gray-100 border border-transparent hover:border-gray-600 
+                           transition-all duration-300'
+                            >
+                                View on GitHub
+                            </a> */}
                         </div>
                     </motion.div>
                 ))}

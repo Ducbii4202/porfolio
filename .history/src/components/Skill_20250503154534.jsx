@@ -46,7 +46,7 @@ const skills = [
         className: 'text-pink-500',
         label: 'Figma',
         level: 75,
-        category: 'Design'
+        category: 'design '
     },
     {
         Icon: SiNodedotjs,

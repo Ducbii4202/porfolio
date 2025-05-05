@@ -57,7 +57,7 @@ const Experience = () => {
                             spotlightColor='rgba(0, 229, 255, 0.2)'
                             className='custom-spotlight-card bg-white/5 p-6 rounded-2xl backdrop-blur-md border border-white/10 shadow-md hover:scale-[1.01] transition-all duration-300'
                         >
-                            <div className='text-sm w-full mb-2 md:mb-0 p-4'>
+                            <div className='text-sm md:w-1/4 mb-2 md:mb-0 p-4'>
                                 {experience.yearRange}
                             </div>
                             <div className='max-w-3xl backdrop-blur-3xl p-4 bg-stone-600/10 rounded-lg'>

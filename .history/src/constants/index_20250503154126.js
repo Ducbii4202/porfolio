@@ -46,7 +46,7 @@ export const PROJECTS = [
     {
         name: 'Resell event tickets Class Project',
         description:
-            'A website that facilitates the easy and fast resale of tickets while they are still valid',
+            'A website that facilitates the easy and fast resale of tickets while they are still valid.',
         image: projects4
         // link: 'https://github.com/DatVX02/SWD392--ChienNV33'
     },
@@ -82,8 +82,8 @@ export const EXPERIENCES = [
         location: 'District Tan Phu',
         description: [
             'Developed a real-time chat feature using WebSockets, resulting in a 20% increase in user engagement and customer satisfaction',
-            'Collaborating with cross-functional teams to deliver high-quality, user-centric solutions',
-            'Driving innovation through continuous improvements in performance and UI/UX design'
+            'Collaborating with cross-functional teams to deliver high-quality, user-centric solutions.',
+            'Driving innovation through continuous improvements in performance and UI/UX design.'
         ],
         des: [
             'Understand and analyze client requirements based on their specific needs and preferences',

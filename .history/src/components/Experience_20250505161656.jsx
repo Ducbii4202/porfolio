@@ -55,26 +55,30 @@ const Experience = () => {
                     >
                         <SpotlightCard
                             spotlightColor='rgba(0, 229, 255, 0.2)'
-                            className='custom-spotlight-card bg-white/5 p-6 rounded-2xl backdrop-blur-md border border-white/10 shadow-md hover:scale-[1.01] transition-all duration-300'
+                            className='custom-spotlight-card bg-white/5 p-6 rounded-2xl backdrop-blur-md border border-white/10 shadow-md hover:scale-[1.01] transition-all duration-300 relative'
                         >
-                            <div className='text-sm w-full mb-2 md:mb-0 p-4'>
-                                {experience.yearRange}
-                            </div>
-                            <div className='max-w-3xl backdrop-blur-3xl p-4 bg-stone-600/10 rounded-lg'>
-                                <h2 className='text-2xl mb-2'>
-                                    {experience.company}
-                                </h2>
-                                <h2 className='text-l mb-2'>
-                                    {experience.title}
-                                </h2>
-                                <p className='text-sm italic text-gray-400'>
-                                    {experience.location}
-                                </p>
-                                <ul className='list-disc list-inside space-y-2 text-base text-gray-100 leading-relaxed pl-5'>
-                                    {experience.description.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))}
-                                </ul>
+                            <div className='absolute inset-0 flex flex-col justify-center items-center text-center'>
+                                <div className='text-sm mb-2 md:mb-0 p-4'>
+                                    {experience.yearRange}
+                                </div>
+                                <div className='max-w-3xl backdrop-blur-3xl p-4 bg-stone-600/10 rounded-lg'>
+                                    <h2 className='text-2xl mb-2'>
+                                        {experience.company}
+                                    </h2>
+                                    <h2 className='text-lg mb-2'>
+                                        {experience.title}
+                                    </h2>
+                                    <p className='text-sm italic text-gray-400 mb-4'>
+                                        {experience.location}
+                                    </p>
+                                    <ul className='list-disc list-inside space-y-2 text-base text-gray-100 leading-relaxed pl-5 text-left'>
+                                        {experience.description.map(
+                                            (item, i) => (
+                                                <li key={i}>{item}</li>
+                                            )
+                                        )}
+                                    </ul>
+                                </div>
                             </div>
                         </SpotlightCard>
                     </motion.div>
