@@ -91,7 +91,7 @@ const skills = [
             />
         ),
         label: 'DBeaver',
-        category: 'Database'
+        category: 'Test API'
     },
     {
         Icon: () => (

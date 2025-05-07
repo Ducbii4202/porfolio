@@ -91,7 +91,7 @@ const skills = [
             />
         ),
         label: 'DBeaver',
-        category: 'Database'
+        category: 'Test API'
     },
     {
         Icon: () => (
@@ -107,7 +107,7 @@ const skills = [
     {
         Icon: () => (
             <img
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOD-ao4edQDCzxGae3DiVqf-yfz6OzlgJucNvHpqcQYrDZYmqMbqpk2R1FgVo5NkYm50&usqp=CAU'
+                src='src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOD-ao4edQDCzxGae3DiVqf-yfz6OzlgJucNvHpqcQYrDZYmqMbqpk2R1FgVo5NkYm50&usqp=CAU"'
                 alt='Visual Diagram'
                 className='w-10 h-10 object-contain'
             />

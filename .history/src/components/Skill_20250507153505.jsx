@@ -81,39 +81,6 @@ const skills = [
         ),
         label: 'Postman',
         category: 'Test API'
-    },
-    {
-        Icon: () => (
-            <img
-                src='https://download.logo.wine/logo/DBeaver/DBeaver-Logo.wine.png'
-                alt='DBeaver'
-                className='w-20 h-20 object-contain'
-            />
-        ),
-        label: 'DBeaver',
-        category: 'Database'
-    },
-    {
-        Icon: () => (
-            <img
-                src='https://static-00.iconduck.com/assets.00/file-type-drawio-icon-2048x2048-dxjfklgq.png'
-                alt='DrawIO'
-                className='w-10 h-10 object-contain'
-            />
-        ),
-        label: 'DrawIO',
-        category: 'Diagram'
-    },
-    {
-        Icon: () => (
-            <img
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOD-ao4edQDCzxGae3DiVqf-yfz6OzlgJucNvHpqcQYrDZYmqMbqpk2R1FgVo5NkYm50&usqp=CAU'
-                alt='Visual Diagram'
-                className='w-10 h-10 object-contain'
-            />
-        ),
-        label: 'Visual Diagram',
-        category: 'Diagram'
     }
 ];
 
@@ -124,7 +91,7 @@ const categories = [
     'Database',
     'Design',
     'Test API',
-    'Diagram'
+    'Diagramming'
 ];
 
 const radius = 50;

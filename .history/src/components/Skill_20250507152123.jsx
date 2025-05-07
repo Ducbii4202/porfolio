@@ -8,8 +8,8 @@ import {
 import { DiSass } from 'react-icons/di';
 import { SiFigma, SiMongodb, SiNodedotjs } from 'react-icons/si';
 import { RiReactjsFill, RiTailwindCssLine } from 'react-icons/ri';
+import postman from '../assets/postman.png';
 
-// Transparent PNG for Postman
 const skills = [
     {
         Icon: BiLogoJavascript,
@@ -43,14 +43,10 @@ const skills = [
         category: 'Frontend'
     },
     {
-        Icon: () => (
-            <img
-                src='https://cdn-icons-png.flaticon.com/512/5968/5968705.png'
-                alt='Figma'
-                className='w-10 h-10 object-contain'
-            />
-        ),
+        Icon: SiFigma,
+        className: 'text-pink-500',
         label: 'Figma',
+        level: 75,
         category: 'Design'
     },
     {
@@ -72,48 +68,10 @@ const skills = [
         category: 'Database'
     },
     {
-        Icon: () => (
-            <img
-                src='https://www.svgrepo.com/show/354202/postman-icon.svg'
-                alt='Postman'
-                className='w-10 h-10 object-contain'
-            />
-        ),
+        Icon: postman,
+        className: 'text-sky-700',
         label: 'Postman',
-        category: 'Test API'
-    },
-    {
-        Icon: () => (
-            <img
-                src='https://download.logo.wine/logo/DBeaver/DBeaver-Logo.wine.png'
-                alt='DBeaver'
-                className='w-20 h-20 object-contain'
-            />
-        ),
-        label: 'DBeaver',
         category: 'Database'
-    },
-    {
-        Icon: () => (
-            <img
-                src='https://static-00.iconduck.com/assets.00/file-type-drawio-icon-2048x2048-dxjfklgq.png'
-                alt='DrawIO'
-                className='w-10 h-10 object-contain'
-            />
-        ),
-        label: 'DrawIO',
-        category: 'Diagram'
-    },
-    {
-        Icon: () => (
-            <img
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOD-ao4edQDCzxGae3DiVqf-yfz6OzlgJucNvHpqcQYrDZYmqMbqpk2R1FgVo5NkYm50&usqp=CAU'
-                alt='Visual Diagram'
-                className='w-10 h-10 object-contain'
-            />
-        ),
-        label: 'Visual Diagram',
-        category: 'Diagram'
     }
 ];
 
@@ -122,9 +80,8 @@ const categories = [
     'Frontend',
     'Backend',
     'Database',
-    'Design',
-    'Test API',
-    'Diagram'
+    'Diagramming',
+    'Design'
 ];
 
 const radius = 50;
@@ -198,7 +155,7 @@ const CircularSkill = () => {
                 {/* Animated underline */}
                 <motion.div
                     layout
-                    className='absolute rounded-full bottom-0'
+                    className='absolute  rounded-full bottom-0'
                     animate={underlineStyle}
                     transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                     style={{
