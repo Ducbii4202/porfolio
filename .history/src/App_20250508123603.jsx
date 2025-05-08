@@ -1,5 +1,5 @@
 import React from 'react';
-// import BlurBackground from './components/BlurBackground';
+import BlurBackground from './components/BlurBackground';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 

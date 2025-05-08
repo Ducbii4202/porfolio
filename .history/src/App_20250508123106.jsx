@@ -1,5 +1,5 @@
 import React from 'react';
-// import BlurBackground from './components/BlurBackground';
+import BlurBackground from './components/BlurBackground';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 
@@ -12,7 +12,7 @@ import { Toaster } from 'react-hot-toast'; // ✅ IMPORT TOASTER
 const App = () => {
     return (
         <>
-            {/* <BlurBackground /> */}
+            <BlurBackground />
             <Navbar />
             <main className='antialiased overflow-x-hidden max-w-7xl mx-auto relative mt-5 z-10'>
                 <Hero1 />

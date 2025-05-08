@@ -136,7 +136,7 @@ const Contact1 = () => {
                     ></textarea>
                 </div>
 
-                <div className='text-center mt-10'>
+                <div className='text-center mt-4'>
                     <motion.button
                         whileHover={!isLoading ? { scale: 1.05 } : {}}
                         whileTap={!isLoading ? { scale: 0.95 } : {}}
